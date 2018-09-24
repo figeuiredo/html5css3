@@ -1,0 +1,33 @@
+/*
+*Folha de estilo principal dp site html5 +css3 
+* @uthor Paulo Vitor Santos Figueiredo
+*/
+
+/*************** Importando font */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/**************** Principal *************/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #8e8e8e;
+
+	/* Uso  de uma imagem como background*/
+	/*background-image: url("../imagens/background.jpg");
+	/*background-attachment: fixed;/*fixa o background*/
+	/*background-size: cover;/*manter o tamanho de forma responsiva */
+
+	font-size: 1em; /*1 em= 16px*/
+
+}
+
+#main{
+	max-width: 1024px;
+	background-color: #ffffff;
+	margin: 0 auto; /*centralizar a div */
+}
+
+
+/************** Tratamento responsivo ***********/
+img {
+	max-width: 100%; /* todas as imagens do site ficam responsivas */
+}
