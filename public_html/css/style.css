@@ -9,7 +9,7 @@
 /**************** Principal *************/
 body{
 	font-family: 'Open Sans', sans-serif;
-	background-color: #8e8e8e;
+	background-color: #aa0000;
 
 	/* Uso  de uma imagem como background*/
 	/*background-image: url("../imagens/background.jpg");
@@ -24,8 +24,26 @@ body{
 	max-width: 1024px;
 	background-color: #ffffff;
 	margin: 0 auto; /*centralizar a div */
+	margin-top:50px; /*box model*/
+
 }
 
+ 	/******** Cabeçalho ****/
+ 	header{
+	width:: 100%;
+	height: 150px;
+	/*background-color: #ffff00; /* dica para ajustar elementos */
+
+ }
+
+header img{
+	width: 128px;
+	height: 128px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+/******** Menu ***********/
 
 /************** Tratamento responsivo ***********/
 img {
