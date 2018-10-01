@@ -1,0 +1,62 @@
+/**
+* Estudo dos menus
+* menu drop responsivo 
+* @author Paulo Vitor Santos Figueiredo
+* Data 01/10/2018
+*/
+body{
+	font-family: sans-serif;
+}
+
+nav{
+	width: 100%;
+	
+}
+nav ul{
+	list-style: none; 
+	padding: 0px;
+	margin:0px;
+	background-color: #000610;
+	overflow: hidden; /* completar a largura total com o background (formar o menu)*/
+}
+
+nav > ul> li{
+	float: left;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+	
+}
+nav ul li a:hover{
+	background-color: #00bcff;
+	transition: all 0.27s; /* efeito transição (0 a 1)*/
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+/* Desnhando um triângulo no css */
+.Detalhes:after{ /* atributo after (após o conteúdo)*/
+	content: ''; /* content: insere um conteúdo no css*/
+	color: #ff0000;
+	border: 5px solid transparent;
+	/*border-left-color: #ff0000;*/
+	/*border-right-color: #00ff00;*/
+	/*border-bottom-color: #0000ff;*/
+	border-top-color:  #e8e8e8;
+	/*Alinhamento*/
+	display: inline-block;
+	vertical-align: middle;
+
+
+}
