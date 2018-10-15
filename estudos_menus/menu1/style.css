@@ -32,3 +32,60 @@ nav ul li a:hover{ /*mouse sobre o link*/
 	border-bottom: #ff0000 2px solid;
 
 }
+
+#root{
+	max-height: 1200px;
+	margin: 0 auto;
+}
+body{
+	background-color: #00ffff;
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	background: rgba(0,0,0, .8);
+	color: rgb(255,255,255);
+	text-align: center;
+	font-family: arial;
+	font-size: 15pt;
+	margin-bottom: 2%;
+	padding: 2% 0;
+	position: fixed;
+	width: 100%;
+	display: inline-block;
+	z-index: 10000;
+}
+
+.container{
+	/*permite que a caixa se ajustem de acordo com a largura da tela */
+	display: flex;
+	/* quando a tela ficar muito pequena, quebra a linha deixando cada caixa uma abaixo da outra */
+	flex-wrap: wrap;
+}
+
+.card{
+	margin: 1rem;
+	box-shadow: 2px 2px 5px #333;
+
+}
+
+	/* 
+	A medida determina qual será o display que  irá exibir o conteudo bem com o tamanho minimo para a sua exibição.
+	Aqui estamos determinando que visto em tela (screen) e quando o navegador for redimencionado para o tamanho minimo
+	de 600px os cards ficarão com uma largura de 50% em relação a caixa container que os contém.
+*/
+@media screen and(min-width: 600px) {
+	.card{
+		flex: 1 1 calc(50% - 2rem);
+	}
+}
+/* 
+	A medida determina qual será o display que  irá exibir o conteudo bem com o tamanho minimo para a sua exibição.
+	Aqui estamos determinando que visto em tela (screen) e quando o navegador for redimencionado para o tamanho minimo
+	de 900px os cards ficarão com uma largura de 33% em relação a caixa container que os contém.
+*/
+@media screen and(min-width: 900px) {
+	.card{
+		flex: 1 1 calc(33% - 2rem);
+	}
+}

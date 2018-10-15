@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<!-- favicon -->
 		<link rel="icon" href="imagens/sonic.png">
-		<title>Home - html5 css3</title>
+		<title>Contato - html5 css3</title>
 		<!-- SEO importante -->
 		<meta name = description content = "Aprenda hmtml5 e css3 de forma simples e prática">
 		<!-- A linha abaixo "garante" o layout responisvo nos diversos dispositivos mobiles -->
@@ -39,36 +39,17 @@
 				<li><a href="contato.html">Contato</a></li>
 			</ul>
 		</nav>
-		<!-- conteudo -->
-		<section id="banner"> 
+		<!-- Formulário de contato -->
+		<div id="contato">
+			<h1>Contato</h1>
+			<form action="formulario.php" method="POST">
+				<input type="text" name="nome" placeholder="nome">
 
-			<img src="imagens/1024x350.jpg" alt="Curso HTML5 CSS3">
-			<h1> Primeiros passos com HTML5 + CSS3 </h1>
-		</section>
-
-		<section id="heading"> 
-			<h2>Aprenda HTML5 e CSS3 de forma simples e prática, desenvolvendo um site responsivo do "zero"</h2>
-		</section>
-
-		<section id="destaque">
-			<!-- Bloco 1 -->
-			<img src="imagens/search.png" alt="Pesquisa">
-			<h2>Destaque 1</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 1</a>
-			<!-- Bloco 2-->
-			<img src="imagens/config.png" alt="Configurações">
-			<h2>Destaque 2</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 2</a>
-			<!-- Bloco 3-->
-			<img src="imagens/share.png" alt="Compartilhar">
-			<h2>Destaque3</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 3</a>
-
-		</section>
-		
+				<input type="text" name="email" placeholder="email">
+				<textarea name="mensagem" placeholder="mensagem"></textarea>
+				<input type="submit" value="Enviar" >
+			</form>
+		</div>
 		
 		<!-- rodapé -->
 		<footer>

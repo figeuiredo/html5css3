@@ -1,6 +1,6 @@
 /** 
  * Criando um menu responsivo com jQuery
- * @author Paulo Vítor Santos Figueiredo
+ * @author José de Assis
  * 13/04/2017
  */
 $(document).ready(function(){

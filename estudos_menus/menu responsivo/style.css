@@ -38,6 +38,7 @@ nav ul li a:hover{
 
 nav li ul{
 	display: none;
+	width: 16.2%;
 }
 
 nav li:hover ul{
@@ -58,5 +59,50 @@ nav li:hover ul{
 	display: inline-block;
 	vertical-align: middle;
 
+
+}
+
+.Mobile{
+	display: none;
+}
+/*Classe usada pelo JS para fixar*/
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+/**** Tratamento responsivo *****/
+
+@media screen and (max-width: 480px){
+	body{
+		margin: 0px;
+	}
+	/* Menu hamburguer*/
+	.Mobile{
+		display: block;
+		background-color: #000616;
+		text-decoration: none;
+		color: ffffff;
+		padding: 15px;
+
+	}
+
+	nav > ul > li{
+		float: none;
+
+	}
+
+	nav ul{
+		width: 100%;
+		display: none;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /*remover efeito de transição*/
+	}
+	nav li ul li{
+		background-color: #044364;
+	}
 
 }
