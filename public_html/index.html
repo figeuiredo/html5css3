@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="utf-8">
 		<!-- favicon -->
-		<link rel="icon" href="imagens/sonic.png">
-		<title>Home - html5 css3</title>
+		<link rel="icon" href="imagens/logom.png">
+		<title>Home-Mario Bros</title>
 		<!-- SEO importante -->
 		<meta name = description content = "Aprenda hmtml5 e css3 de forma simples e prática">
 		<!-- A linha abaixo "garante" o layout responisvo nos diversos dispositivos mobiles -->
@@ -19,7 +19,7 @@
 		<div id="main">
 		<!-- cabeçalho -->
 		<header>
-			<a href="https://www.google.com"><img src="imagens/logom.png" title="html5 + css3"><a/>
+			<a href="https://paulosite.000webhostapp.com"><img src="imagens/logom.png" title="Mario Bros"><a/>
 
 
 		</header>
@@ -31,9 +31,9 @@
 				<li><a href="sobre.html">sobre</a></li>
 				<li><a href="#" class="Detalhes">Conteúdo</a>
 					<ul>
-					<li><a href="conteudo/html5.html">HTML</a></li>
-					<li><a href="conteudo/css3.html">CSS</a></li>
-					<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank" >JavaScript</a></li>
+					<li><a href="conteudo/html5.html">Princesa Pech</a></li>
+					<li><a href="conteudo/css3.html">Luigi</a></li>
+					<li><a href="https://www.nintendo.com/pt_BR/" target="_blank" >Nintendo</a></li>
 				</ul>
 				</li>
 				<li><a href="contato.html">Contato</a></li>
@@ -42,30 +42,38 @@
 		<!-- conteudo -->
 		<section id="banner"> 
 
-			<img src="imagens/1024x350.jpg" alt="Curso HTML5 CSS3">
-			<h1> Primeiros passos com HTML5 + CSS3 </h1>
+			<img src="imagens/mariobros.jpeg" alt="Mario BROS">
+			<h1> Mario Bros </h1>
 		</section>
 
 		<section id="heading"> 
-			<h2>Aprenda HTML5 e CSS3 de forma simples e prática, desenvolvendo um site responsivo do "zero"</h2>
+			<h2>Conheça o personagem <span id="MarioBros">Mario Bros</span> da franquia <span id="Nintendo">Nintendo</span></h2>
 		</section>
 
 		<section id="destaque">
 			<!-- Bloco 1 -->
-			<img src="imagens/search.png" alt="Pesquisa">
-			<h2>Destaque 1</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 1</a>
+			<div class="blocos">
+			<img src="imagens/mariokr.png" alt="Mario Kart">
+			<h2>Mario Kart</h2>
+			<p>Em Mario Kart, os jogadores competem em corridas de kart.</p>
+			<a href="#">Saiba +</a> 
+			</div>
+
 			<!-- Bloco 2-->
-			<img src="imagens/config.png" alt="Configurações">
-			<h2>Destaque 2</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 2</a>
+			<div class="blocos">
+			<img src="imagens/marioh.png" alt="História">
+			<h2>Mario Bros - História</h2>
+			<p>é um jogo eletrônico de plataforma para arcades criado por Shigeru Miyamoto.</p>
+			<a href="#">Saiba +</a>
+			</div>
+
 			<!-- Bloco 3-->
-			<img src="imagens/share.png" alt="Compartilhar">
-			<h2>Destaque3</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 3</a>
+			<div class="blocos">
+			<img src="imagens/bowserg.png" alt="Vilões">
+			<h2>Vilão do Jogo</h2>
+			<p>Bowser é o maior vilão de todos os tempos, segundo o Guinness Book.</p>
+			<a href="#">Saiba +</a> 
+			</div>
 
 		</section>
 		
@@ -81,5 +89,6 @@
 <script src="js/menuresponsivo.js"></script>
 <script src="js/fixamenu.js"></script>
 <script src="js/removeclick.js"></script>
+<script src="js/tela.js"></script>
 	</body>
 	</html>

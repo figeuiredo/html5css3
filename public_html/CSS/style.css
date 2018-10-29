@@ -1,0 +1,411 @@
+/**
+ Folha de estilo principal do html5 + css3
+ @author Paulo Vítor Santos Figueiredo
+
+ */
+
+/****************  IMPORTANDO FONT ****************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+/**************** Principal ****************/
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #3477e2;
+	/*background-image: url("../imagens/background.png");*/
+	/*background-attachment: fixed; /* fixa o background */
+	/*background-size: cover; /* manter o tamanho de forma responiva */
+	/*font-size: 1em; /* 1em = 16 px */
+}
+#main{
+	max-width: 1024px;
+	background-color: #c9ddfc;
+	/*background-image: url("../imagens/texturaagua.gif");*/
+	margin: 0 auto; /* centralizar a div */
+	margin-top: 50px; /* box model*/
+}
+/*********************************** Cabeçalho **********************************/
+
+header{
+	width: 100%;
+	height: 200px;
+	/*background-color: #00083f*/
+	/*margin-bottom: 20px;*/
+}
+
+header img{
+	width: 128px;
+	height: 128px;
+	margin-left: 10px;
+}
+/*********************************** MENU *************************************/
+
+ 
+
+/*********************************** Tratamento Responsivo *************************************/
+
+img {
+	max-width: 100%; /* todas as imagens do site ficam responsivas */
+}
+/*************/
+nav{
+	width: 100%;
+	max-width: 1024px;
+	position: absolute;
+	z-index: 3;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	/*background-color: #1000ff;*/
+	/*overflow: hidden; /* completar a largura total com o background (formar o menu)*/
+}
+
+nav > ul > li{
+	float: left;
+	width: 25%; /* 4 elementos do seu primário */
+	
+}
+
+nav > ul > li> a{
+	font-size: 1.125em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+	text-align: center;
+	background-color: #ff0000;
+	/*padding: 15px 15px 10px 15px;
+	border-left: #000000 3px solid;*/
+}
+
+nav ul li a:hover{
+	background-color:  #0000ff;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+}
+
+nav li ul{
+	display: none;
+	/*width: 25%;*/
+}
+
+nav li:hover ul{
+	display: block;
+	/*position: absolute;*/
+}
+
+/* Desenhando um triângulo no css */
+
+.Detalhes:after{ /* Atributo after (após o conteudo)*/
+	content: ''; /* Content: insere um conteudo no css */
+	color: #FFFFFF;
+	border: 5px solid transparent;
+	/* border-left-color: #800000;
+	border-right-color: #800000;
+	border-bottom-color: #FF69B4; */
+	border-top-color: #FFF0F5; 
+	/* Alinhamento */
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+
+.Mobile{
+	display: none;
+
+}
+
+/* Classe usada pelo js para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	
+}
+
+/***** Conteúdo em Destaque - Home *******/
+/**** banner **/ 
+#banner{
+	margin-top: 54px;
+	max-width: 1024px;
+	height: 350px;
+	/*** usado para flexibilizar o layout ***/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+#banner img{
+	filter: brightness(30%);
+}
+#banner h1{
+	position: absolute;
+	color: #ffffff;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.7em;
+	text-transform: uppercase; /* maiúsculo */
+}
+
+/***** heading *****/
+#heading{
+	width: 80%;
+	margin: 0 auto;
+	padding: 35px;
+}
+#heading h2{
+	text-align: center;
+	font-weight: 400;
+}
+
+#MarioBros{
+	font-weight: 600;
+	color:#ff0000;
+}
+#Nintendo{
+	font-weight: 600;
+	color: #0000ff;
+}
+/***** blocos ******/
+#destaque{
+	max-width: 1024px;
+	height: 320px;
+}
+.blocos{
+	width: 30.76%; /* (315/1024)*100 ----*/
+	height: 320px;
+	/*background-color: #ffff00;*/
+	float: left;
+	margin-left: 1.95%; /*--- (20/1024)* ---*/
+	border: 1px solid #3477e2;
+	text-align: center;
+	position: relative;/*posicionamento do botao*/
+
+}
+
+.blocos p{
+	padding: 0px 10px 0px 10px;
+	text-align: left;
+}
+
+.blocos a{
+	width: 80px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #3477e2;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+
+
+
+/***** Formulário de Contato *****/
+#contato{
+	padding-top: 80px;
+	/*background-color: #ff00ff;*/
+	width: 70%;
+	margin: 0 auto;
+
+}
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #0000ff;
+	margin-bottom: 20px;
+
+}
+#contato textarea{
+	width: 100%;
+	padding: 20px 10px 20px 10px;
+	border-radius: 5px;
+	border: 1px solid #0000ff;
+	margin-bottom: 20px;
+	resize: none;
+}
+#contato input[type=submit]{
+	background-color: #3477e2;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	padding: 15px 20px 15px 20px;
+	color: #ffffff;
+}
+
+
+/**************** Rodapé **************/
+
+footer{
+	width: 100%;
+	background-color: #ff0000;
+	margin-top: 50px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.75em;
+}
+
+	
+
+/************* Tratamento responsivo ***************/
+
+/***** 1° ponto de quebra ******/
+
+@media screen and (max-width: 1058px){
+	/****** principal ******/
+		body{
+		margin: 0px;
+	}
+		#main{ 
+		margin-top: 0px;
+	}
+	#banner{
+		margin-top: 10px;
+	}
+}
+
+/***** 2° ponto de quebra ******/
+@media screen and (max-width: 792px){
+	#banner{
+		margin-top: -20px;
+		
+	}
+
+}
+
+/***** 3° ponto de quebra ******/
+@media screen and (max-width: 622px){
+	#banner{
+		margin-top: -20px;
+		
+	}
+
+}
+
+/***** 4° ponto de quebra ******/
+@media screen and (max-width: 620px){
+	#banner{
+		margin-top: -45px;
+		font-size: 0.550em;
+	}
+}
+
+
+
+/*************** Smartphone ****************/
+@media screen and (max-width: 480px){
+			/***** Principal ****/
+ 	body{
+	margin: 0px;
+}
+
+#main{
+	margin: 0px;
+	}
+
+
+
+	/******************** CABEÇALHO ********************/
+	header{
+	margin-bottom: 0px;
+	text-align: center;
+}
+ /** banner ***/
+ #banner{
+ 	margin-top: 118px;
+ 	height: 0;
+ }
+ #banner h1{
+ 	font-size: 1.5em;
+ 	text-align: center;
+ }
+#heading{
+	width: 80%;
+	padding: 25px;
+	margin-top: 60px;
+}
+#heading h2{
+	font-size: 1.2em;
+}
+header img{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+	/* menu hamburger */
+	
+	.Mobile{
+		display: block;
+		background-color: #000616;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 15px;
+
+	}
+
+	nav > ul > li{
+		float: none;
+		width: 100%;
+
+	}
+	nav ul{
+		width: 100%;
+		display: none;
+		
+	}
+
+	/* ajuste */
+	nav ul li a{
+		/*font-size: 0.93em;
+		padding: 12px;*/
+		text-align: left;
+	}
+	nav ul li a:hover{
+		transition: all 0s; /*remover efeito de transição*/
+	}
+	nav li ul li{
+		background-color: #778899;
+	}
+
+	nav li ul li a{
+		background-color: #000000;
+		padding-left: 40px;
+	}
+
+
+/* IMPORTANTE para UX no dispositivo mobile,
+não exibir o 2º nivel do menu enquanto o conteudo não for clicado*/
+nav li:hover ul{
+	display: none;
+	}
+
+	/** blocos **/
+	#destaque{
+		max-width: 315px;
+		height: auto;
+		margin: 0 auto;
+
+	}
+
+	.blocos{
+		width: 100%;
+		height: 320px;
+		float: none;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+}
+iframe{
+	width: 400px;
+	height: 230px;
+}
